@@ -13,7 +13,9 @@ export default {
     },
 
     // ! Global css dosyalarımız.
-    css: [],
+    css: [
+        "~/static/css/bootstrap.min.css", "~/static/css/main.css"
+    ],
 
     // ! Dışardan ekleyebileceğimiz js yapıları.
     plugins: [],
@@ -25,5 +27,15 @@ export default {
     modules: [],
 
     // ! NuxtJS ayarları
-    build: {}
+    build: {},
+
+    components: {
+        dirs: [
+          '~/components',
+            {
+              path: '~/components/posts/',
+              prefix: 'Posts'
+            }
+        ]
+      }
 }
