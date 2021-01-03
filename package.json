@@ -1,0 +1,27 @@
+{
+  "name": "nuxtjs-lesson",
+  "version": "1.0.0",
+  "description": "NuxtJS Lesson",
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "generate": "nuxt generate",
+    "start": "nuxt start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/erdinccurebal/nuxtjs-lesson.git"
+  },
+  "keywords": [
+    "nuxtjs-lesson"
+  ],
+  "author": "Erdinç Cürebal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/erdinccurebal/nuxtjs-lesson/issues"
+  },
+  "homepage": "https://github.com/erdinccurebal/nuxtjs-lesson#readme",
+  "dependencies": {
+    "nuxt": "^2.14.12"
+  }
+}
