@@ -31,11 +31,15 @@ export default {
 
     components: {
         dirs: [
-          '~/components',
+            '~/components',
             {
-              path: '~/components/posts/',
-              prefix: 'Posts'
+                path: '~/components/posts/',
+                prefix: 'Posts'
+            },
+            {
+                path: '~/components/common/',
+                prefix: 'Common'
             }
         ]
-      }
+    }
 }

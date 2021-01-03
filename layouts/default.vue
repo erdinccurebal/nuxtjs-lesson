@@ -1,12 +1,12 @@
 <template>
   <div>
-    <Nav />
+    <CommonNav />
     <div class="container">
       <div class="row">
-        <Sidebar />
+        <CommonSidebar />
         <Nuxt />
       </div>
     </div>
-    <Footer />
+    <CommonFooter />
   </div>
 </template>
