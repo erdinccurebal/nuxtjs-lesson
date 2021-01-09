@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/erdinccurebal/nuxtjs-lesson#readme",
   "dependencies": {
+    "@nuxtjs/axios": "^5.12.5",
     "nuxt": "^2.14.12"
   }
 }

@@ -24,7 +24,13 @@ export default {
     components: true,
 
     // ! NuxtJS ait modüllerimiz.
-    modules: [],
+    modules: ['@nuxtjs/axios'],
+
+    // ! NuxtJS server side loading bar.
+    loading: {
+        color: 'blue',
+        height: '5px'
+    },
 
     // ! NuxtJS ayarları
     build: {},

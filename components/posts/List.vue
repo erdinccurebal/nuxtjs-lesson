@@ -1,6 +1,6 @@
 <template>
   <div class="col-lg-9">
-    <div class="row">
+    <!-- <div class="row">
       <div v-for="post in posts" :key="post.id" class="col-lg-4 col-md-6 mb-4">
         <div class="card h-100">
           <img
@@ -17,57 +17,18 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
+    <div v-for="post in posts" :key="post.id">{{ post.title }}</div>
   </div>
 </template>
 
 <script>
 export default {
-  data() {
-    return {
-      posts: [
-        {
-          id: 1,
-          title: "Lorem ipsuk",
-          content:
-            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ametnumquam aspernatur!",
-        },
-        {
-          id: 2,
-          title: "Lorem ipsuk",
-          content:
-            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ametnumquam aspernatur!",
-        },
-        {
-          id: 3,
-          title: "Lorem ipsuk",
-          content:
-            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ametnumquam aspernatur!",
-        },
-        {
-          id: 4,
-          title: "Lorem ipsuk",
-          content:
-            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ametnumquam aspernatur!",
-        },
-        {
-          id: 5,
-          title: "Lorem ipsuk",
-          content:
-            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ametnumquam aspernatur!",
-        },
-        {
-          id: 6,
-          title: "Lorem ipsuk",
-          content:
-            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ametnumquam aspernatur!",
-        },
-      ],
-    };
-  },
-  created() {
-    this.$emit("xxxx", "Test Message");
-  },
-  props: ["test"],
+  props: {
+    posts: {
+      type: Array,
+      required: true
+    }
+  }
 };
 </script>
